@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+      <style>
+        body{
+          display: flex;
+          background-color:  hsl(30, 54%, 90%);
+          justify-content: center;
+        }
+        .firstDiv {
+          display: flex;
+          flex-direction: column; /* Stack content vertically */
+          justify-content: flex-start; /* Align items at the start of the flex container */
+          align-items: flex-start; /* Align the content to the top */
+          background-color: hsl(332, 57%, 78%);
+          padding: 5px;
+          margin: 20px auto;
+          border-radius: 20px;
+          width: 90%;
+          max-width: 700px;
+        }
+        
+        
+        .content{
+          background-color:  hsl(330, 100%, 98%);
+          width: 700px;
+          border-radius: 20px;
+        }
+        .image {
+          border-radius: 25px;
+          display: block; 
+          margin: 30px auto; 
+          background-color: #f4f4f4; 
+          height: 300px;
+        }
+        
+        
+      img {
+          border-radius: 15px; 
+          max-width: 100%; 
+      }
+      hr {
+        border: none; 
+        border-top: 2px solid black; 
+        width: 90%; 
+        margin: 20px auto; 
+    }
+    h1{
+      font-family: Young Serif;
+      font-weight: 400;
+    }
+    h3{
+      font-family: Young Serif;
+      font-weight: 400;
+      color: hsl(14, 45%, 36%); 
+    }
+    .theh3{
+      font-family: Young Serif;
+      font-weight: 400;
+      color:  hsl(332, 51%, 32%); 
+    }
+    .attribution {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      background-color: hsl(14, 45%, 36%);
+      color: white;
+      font-family: 'Outfit', sans-serif;
+    }
+    table {
+      width: 100%; 
+      border-collapse: collapse; 
+      margin:0 10px 0 10px; 
+    }
+    
+    table td {
+      padding: 8px; 
+      text-align: left; 
+      border-bottom: 1px solid #ccc; /* Add border between rows */
+    }
+    
+    .table{
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      justify-content: flex-start; /* Align items at the start of the flex container */
+      align-items: flex-start; /* Align the content to the top */
+      padding: 5px;
+      margin: 20px auto;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 700px;
+    }
+    .td{
+      color:  hsl(14, 45%, 36%);
+      font-weight: bold;
+      font-size: large;
+
+    }
+    .ingrediets{
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      justify-content: flex-start; /* Align items at the start of the flex container */
+      align-items: flex-start; /* Align the content to the top */
+      padding: 5px;
+      margin: 20px auto;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 700px;
+    }
+    .Instructions{
+      
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: flex-start; /* Align items at the start of the flex container */
+        align-items: flex-start; /* Align the content to the top */
+        padding: 5px;
+        margin: 20px auto;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 700px;
+    }
+    li{
+      margin-bottom: 10px;
+      font-family: Outfit;
+      font-weight: 400;
+    }
+    p{
+      font-family: outfit;
+      font-weight: 400;
+    }
+    .lastbutnotleast{
+      display: flex;
+      flex-direction: column; /* Stack content vertically */
+      justify-content: flex-start; /* Align items at the start of the flex container */
+      align-items: flex-start; /* Align the content to the top */
+      padding: 5px;
+      margin: 20px auto;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 700px;
+    }
+     </style>
+
+
+</head>
+
+
+
+<body>
+  <div class="content">
+    <img src="./assets/images/image-omelette.jpeg" alt="Omelette" class="image">
+    <div class="lastbutnotleast">
+      <h1>Simple Omelette Recipe</h1> 
+    
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </div>
+  <div class = "firstDiv">
+    <h3 class="theh3">Preparation time</h3>
+    <ul>
+      <li><b>Total:</b> Approximately 10 minutes</li>
+      <li><b>Preparation:</b> 5 minutes</li>
+      <li><b>Cooking:</b> 5 minutes</li>
+    </ul>
+  </div>
+
+  <div class="ingrediets">
+    
+    <h3>Ingredients</h3>
+  <ul>
+    <li>2-3 large eggs</li>
+    <li>Salt, to taste</li>
+    <li>Pepper, to taste</li>
+    <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+  </div>
+
+
+  <hr>
+
+  <div class="Instructions">
+
+    <h3>Instructions</h3>
+    <ol>
+      
+      <li><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
+    
+      <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+    
+      <li><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
+    
+      <li><b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.</li>
+    
+      <li><b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
+    
+      <li><b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
+  
+    </ol>
+
+  </div>
+  
+  <hr>
+
+  <div class="table">
+    <h3>Nutrition</h3>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <table>
+        <tr>
+          <td>Calories</td>
+          <td class="td">277kcal</td>
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <td class="td">0g</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td class="td">20g</td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td class="td">22g</td>
+        </tr>
+      </table>
+      
+  </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tareq Alazzam</a>.
+  </div>
+</body>
+</html>
